@@ -57,7 +57,7 @@ momObj.prototype.draw = function(){
 	var deltaY = my - this.y;//鼠标和鱼的纵坐标差
 	var deltaX = mx - this.x;//鼠标和鱼的横坐标差
 	var beta = Math.atan2(deltaY,deltaX)+Math.PI;//[-PI,PI]反正切获取角度，注意y在前面，使鱼的角度趋近于这个角度
-	this.angle = lerpAngle(beta,this.angle,0.75);//返回趋近角度
+	this.angle = lerpAngle(beta,this.angle,0.7);//返回趋近角度
 	//大鱼摇尾巴
 	this.bigTailTimer += deltaTime;
 	if(this.bigTailTimer >50){
