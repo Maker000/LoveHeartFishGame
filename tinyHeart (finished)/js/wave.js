@@ -16,8 +16,6 @@ waveObj.prototype.init  = function(){
 }
 
 waveObj.prototype.draw = function(){
-	context1.save();
-	context1.shadowBlur = 10;
 	for(var i=0;i<this.num;i++){
 		if(this.alive[i]){
 			//吃普通食物产生白色的圈
@@ -30,6 +28,7 @@ waveObj.prototype.draw = function(){
 				}
 				this.alpha=1-this.r[i]/40;
 				context1.lineWidth = 3;
+				context1.shadowBlur = 10;
 				context1.shadowColor = "rgba(134,45,145,1)";
 				context1.beginPath();
 				context1.arc(this.x[i], this.y[i], this.r[i], 0, Math.PI * 2);
@@ -48,6 +47,7 @@ waveObj.prototype.draw = function(){
 				}
 				this.alpha=1-this.r[i]/40;
 				context1.lineWidth = 3;
+				context1.shadowBlur = 10;
 				context1.shadowColor = "rgba(65,105,225,1)";
 				context1.beginPath();
 				context1.arc(this.x[i], this.y[i], this.r[i], 0, Math.PI * 2);
@@ -65,6 +65,7 @@ waveObj.prototype.draw = function(){
 					break;//进行下一次循环
 				}
 				context1.lineWidth = 4;
+				context1.shadowBlur = 10;
 				context1.shadowColor = "rgba(203,91,0,1)";
 				this.alpha=1-this.r[i]/90;
 				context1.beginPath();
@@ -76,7 +77,6 @@ waveObj.prototype.draw = function(){
 			}
 		}
 	}
-	context1.restore();
 }
 
 waveObj.prototype.born = function(x,y,z){
