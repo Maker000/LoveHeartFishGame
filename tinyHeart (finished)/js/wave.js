@@ -16,6 +16,7 @@ waveObj.prototype.init  = function(){
 }
 
 waveObj.prototype.draw = function(){
+	context1.save();
 	context1.shadowBlur = 10;
 	for(var i=0;i<this.num;i++){
 		if(this.alive[i]){
@@ -75,6 +76,7 @@ waveObj.prototype.draw = function(){
 			}
 		}
 	}
+	context1.restore();
 }
 
 waveObj.prototype.born = function(x,y,z){
