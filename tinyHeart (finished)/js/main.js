@@ -47,7 +47,7 @@ function init(){
 		dust.init();
 		wave = new waveObj();
 		wave.init();
-		context1.font = "25px Verdana";
+		context1.font = "20px Verdana";
 	//	context1.textAlign = "center";
 	}else{
 		alert('你的浏览器不支持canvas!');
