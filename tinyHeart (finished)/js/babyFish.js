@@ -44,8 +44,8 @@ babyObj.prototype.init = function(){
 babyObj.prototype.draw = function(){
 	if(!data.gameOver){
 		//小鱼趋向大鱼
-		this.x = lerpDistance(mom.x,this.x,0.96);
-		this.y = lerpDistance(mom.y,this.y,0.96);
+		this.x = lerpDistance(mom.x,this.x,0.975);
+		this.y = lerpDistance(mom.y,this.y,0.975);
 		//小鱼随大鱼旋转
 		var deltaY = mom.y - this.y;//大鱼和小鱼的纵坐标差
 		var deltaX = mom.x - this.x;//大鱼和小鱼的横坐标差
