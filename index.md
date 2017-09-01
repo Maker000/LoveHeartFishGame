@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Maker000/LoveHeartFishGame/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 爱心鱼游戏：
 
-### Markdown
+#### 玩法：鼠标移动控制鱼妈妈运动，小鱼跟在鱼妈妈后面，游戏结束小鱼不会再动了。
+### 一、游戏规则简介：
+鱼妈妈吃海藻产生的食物喂给小鱼，小鱼吃到食物恢复活力身体变橙色，当没有吃到食物时小鱼身体颜色逐渐变淡，直到变为白色小鱼死亡，游戏结束。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### 二、得分介绍
+#### 橙色食物：100分
+#### 蓝色食物：分数加倍
+鱼妈妈吃到一个普通（橙色）食物得100分，身体变橙，按照吃的食物越多（≤8）身体颜色逐渐变深，当吃到蓝色食物时身体变蓝。鱼妈妈把获得的食物喂给小鱼时，当前获得的分数累加到总分上，如果鱼妈妈身体为蓝色时喂食给小鱼，则分数加倍累计到总分上。
 
-# Header 1
-## Header 2
-### Header 3
+### 三、细节效果
+海葵：海葵和尘埃一起左右摆动，增加海底效果。海葵和一些尘埃可以左右摆动，海葵产生两种食物，橙色为普通食物，蓝色为分数加倍的食物。食物在海葵上长大，然后以不同的速度上升。
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Maker000/LoveHeartFishGame/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+鱼吃食物：鱼妈妈吃普通食物时产生白色泡泡，同时身体变橙。吃蓝色食物时产生蓝色泡泡，身体变蓝。当鱼妈妈喂食给小鱼时产生橙色泡泡，同时身体褪色为无色，小鱼身体变橙。
