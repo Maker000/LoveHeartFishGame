@@ -17,7 +17,7 @@ var fruitObj = function(){
 	fruitObj.prototype.init = function(){
 		for(var i = 0; i<this.num; i++){
 			this.born(i);//果实出生
-			this.spd[i] = Math.random() * 0.019+0.0025;//产生随机速度
+			this.spd[i] = Math.random() * 0.02+0.002;//产生随机速度
 			var run = Math.random();//产生果实类型的随机数
 			if(run<0.2){//产生蓝色果实的几率
 				this.fruitType[i] = this.blue;
