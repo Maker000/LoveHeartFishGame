@@ -14,7 +14,7 @@ dataObj.prototype.draw = function(){
 	context1.fillStyle = "white";
 	context1.shadowBlur = 10;
 	context1.shadowColor = "white";
-	context1.fillText("score：" + this.score, w * 0.5-55, 55);
+	context1.fillText("SCORE：" + this.score, w * 0.5-55, 45);
 	context1.font = "15px Verdana";
 	context1.fillText("fruitNum：" + this.fruitNum , 40, h - 60);
 	context1.fillText("double：" + this.double , 40, h - 30);
