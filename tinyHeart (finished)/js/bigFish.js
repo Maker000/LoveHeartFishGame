@@ -51,8 +51,8 @@ momObj.prototype.init = function(){
  */
 momObj.prototype.draw = function(){
 	//鱼随鼠标移动
-	this.x = lerpDistance(mx,this.x,0.94);//使用了com里面的封装好的方法，后面的趋近前面的，mx是变化的
-	this.y = lerpDistance(my,this.y,0.94);
+	this.x = lerpDistance(mx,this.x,0.95);//使用了com里面的封装好的方法，后面的趋近前面的，mx是变化的
+	this.y = lerpDistance(my,this.y,0.95);
 	//鱼随鼠标旋转
 	var deltaY = my - this.y;//鼠标和鱼的纵坐标差
 	var deltaX = mx - this.x;//鼠标和鱼的横坐标差
